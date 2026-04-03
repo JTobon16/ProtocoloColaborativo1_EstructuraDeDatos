@@ -1,4 +1,4 @@
-# arrays.py
+
 import random
 
 def crear_arreglo(n):
@@ -6,15 +6,16 @@ def crear_arreglo(n):
     return [random.randint(1, 100) for _ in range(n)]
 
 def recorrer_for_clasico(arr):
-    print("Recorrido for clasico:")
+    print("Recorrido FOR clasico:")
     for i in range(len(arr)):
         print(f"Indice {i}: {arr[i]}")
 
 def recorrer_for_each(arr):
-    print("Recorrido for-each:")
+    print("Recorrido FOR-EACH:")
     for valor in arr:
         print(valor)
 
+#modificacion
 def modificar_arreglo(arr):
     """Cambiar impares por 0 y multiplicar por indice"""
     for i in range(len(arr)):
@@ -23,6 +24,7 @@ def modificar_arreglo(arr):
         arr[i] *= i
     return arr
 
+#busqueda
 def busqueda_lineal(arr, valor):
     """Retorna indice si se encuentra, -1 si no"""
     for i, v in enumerate(arr):
